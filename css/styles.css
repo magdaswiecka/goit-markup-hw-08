@@ -135,7 +135,7 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/Imgteam.jpg");
+    url("./images/Imgteam.jpg");
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
