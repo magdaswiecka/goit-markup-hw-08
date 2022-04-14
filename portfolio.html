@@ -32,11 +32,19 @@
       </div>
 
       <div class="contact-menu">
-        <a class="contact" href="tel:+48111111111">+48 111 111 111</a>
-        <a class="contact" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-     </div>
+        <a class="contact" href="tel:+48111111111">
+          <svg class="smartphone" width="10px" height="16px">
+            <use href="./images/sprite.svg#icon-smartphone"></use>
+          </svg>
+          +48 111 111 111
+        </a>
+        <a class="contact" href="mailto:info@devstudio.com">
+          <svg class="envelope" width="16px" height="12px">
+            <use href="./images/sprite.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+      </div>
     </header>
     <main c">
       <ul class="buttons-portfolio">
@@ -188,18 +196,58 @@
     </div>
     </main>
     <footer class="footer">
-      <div class="flex-footer container">
-          <a class="logo-footer" href="/">WebStudio</a>
-          <address class="address-footer">
-            m. Warszawa, Aleje Jerozolimskie 21
-          </address>
-          <a class="contact-footer" href="tel:+48111111111">+48 111 111 111</a>
-          <a
-            class="contact-footer contact-footer-mail"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+      <div class="container inner-footer">
+        <div class="flex-footer">
+          <div class="logo-footer">
+            <a class="logo-footer-link" href="/">
+              <span class="white">Web</span><span class="blue">Studio</span>
+            </a>
+          </div>
+          <div>
+            <address class="address-footer">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
+          </div>
+  
+          <div>
+            <a class="contact-footer" href="tel:+48111111111">+48 111 111 111</a>
+          </div>
+          <div>
+            <a
+              class="contact-footer contact-footer-mail"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+        </div>
+        <ul class="social-footer">
+          <li class="social-footer-title">Dołącz do nas</li>
+          <li>
+            <div class="footer-social-icons">
+              <div class="footer-social-icon">
+                <svg class="icon-instagram" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </div>
+              <div class="footer-social-icon">
+                <svg class="icon-twitter" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </div>
+              <div class="footer-social-icon">
+                <svg class="icon-facebook" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </div>
+              <div class="footer-social-icon">
+                <svg class="icon-linkedin" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </footer>  
+    </footer>
   </body>
 </html>

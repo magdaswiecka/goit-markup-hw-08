@@ -141,7 +141,7 @@ body {
   background-size: cover;
   height: 600px;
   justify-content: center;
-  width: 100%;
+  width: 1600px;
 }
 .slider-content {
   display: flex;
@@ -383,6 +383,7 @@ ul.social-footer .social-footer-title {
 .icon-client:hover {
   fill: var(--maincolor-blue);
   cursor: pointer;
+  border: var(--maincolor-blue) solid 1px;
 }
 
 .button1 {
@@ -437,6 +438,10 @@ ul.social-footer .social-footer-title {
   margin: 0;
   margin-bottom: 30px;
 }
+.portfolio-figure:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .projects-figcaption {
   border: 1px solid;
   border-color: rgba(238, 238, 238, 1);
@@ -480,10 +485,10 @@ footer {
 .flex-footer {
   display: flex;
   flex-direction: column;
+  padding-left: 25px;
 }
 .inner-footer {
   display: flex;
-  gap: 70px;
   flex-direction: row;
   justify-content: center;
   padding-top: 60px;
@@ -532,4 +537,7 @@ footer {
 }
 .contact-footer-mail {
   padding-bottom: 51px;
+}
+.social-footer {
+  padding-left: 70px;
 }
