@@ -23,7 +23,7 @@
 }
 
 .white {
-  color: white
+  color: white;
 }
 
 .blue {
@@ -59,17 +59,17 @@
 .menu {
   display: flex;
   margin-top: 32px;
-  margin-bottom: 32px;
   justify-content: flex-start;
   margin-left: 93px;
 }
 .contact-menu {
   display: flex;
-  margin-top: 32px;
+  margin-top: 26px;
   margin-bottom: 32px;
 }
 
 .main-menu {
+  display: block;
   color: black;
   text-decoration: none;
   font-weight: 500;
@@ -78,10 +78,21 @@
   letter-spacing: 0.02em;
   margin-left: 46px;
 }
+
+.main-menu-selected::after {
+  display: block;
+  content: "";
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--maincolor-blue);
+  margin-top: 30px;
+}
+
 .main-menu:hover {
   color: var(--maincolor-blue);
-  text-decoration: none;
 }
+
 .logo-menu {
   display: flex;
   flex-direction: row;
@@ -194,7 +205,7 @@ body {
   justify-content: center;
   padding: 25px 25px;
 }
-.icon-clock{
+.icon-clock {
   background-color: rgba(245, 244, 250, 1);
   display: flex;
   flex-direction: row;
@@ -251,6 +262,25 @@ body {
   padding: 0px;
   margin-bottom: 94px;
   margin-top: 0px;
+}
+.activity {
+  position: relative;
+  height: 294px;
+}
+.label {
+  position: absolute;
+  bottom: 0px;
+  margin: 0px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  padding: 27px;
 }
 .h2-clients {
   font-weight: 700;
@@ -313,7 +343,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
   padding-bottom: 34px;
   padding-top: 18px;
   fill: rgba(175, 177, 184, 1);
@@ -337,7 +367,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
   padding-bottom: 34px;
   padding-top: 18px;
 }
@@ -440,7 +470,8 @@ ul.social-footer .social-footer-title {
 }
 .portfolio-figure:hover {
   cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-figcaption {
   border: 1px solid;
@@ -472,6 +503,36 @@ ul.social-footer .social-footer-title {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-top: 5px;
+}
+.img {
+  position: relative;
+  overflow: hidden;
+}
+.box-content-portfolio {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  margin: 0px;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(+100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: white;
+  padding-left: 24px;
+  padding-top: 49px;
+  padding-right: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  
+  
+  
+  
+}
+.portfolio-figure:hover .box-content-portfolio {
+  transform: translateY(0);
 }
 
 footer {
@@ -538,4 +599,35 @@ footer {
 }
 .social-footer {
   padding-left: 70px;
+}
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: white;
+}
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.is-hidden {
+  opacity:0;
+  visibility: hidden;
+  pointer-events: none;
 }

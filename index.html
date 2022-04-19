@@ -25,7 +25,7 @@
         </div>
 
         <nav class="menu">
-          <a class="main-menu" href="index.html">Agencja</a>
+          <a class="main-menu main-menu-selected" href="index.html">Agencja</a>
           <a class="main-menu" href="portfolio.html">Portfolio</a>
           <a class="main-menu" href="kontakt">Kontakt</a>
         </nav>
@@ -49,7 +49,7 @@
     <div class="slider">
       <div class="slider-content">
         <h1 class="main-h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="main-button">Zamów usługę</button>
+        <button class="main-button" data-modal-open>Zamów usługę</button>
       </div>
     </div>
     <main class="container">
@@ -105,15 +105,18 @@
       </ul>
       <h2 class="main-h2">Czym się zajmujemy</h2>
       <ul class="activity-type">
-        <li>
+        <div class="activity">
           <img src="images/img.jpg" alt="laptop" height="294" width="370" />
-        </li>
-        <li>
+          <p class="label">Aplikacje komputerowe</p>
+        </div>
+        <div class="activity">
           <img src="images/img(1).jpg" alt="laptop2" height="294" width="370" />
-        </li>
-        <li>
+          <p class="label">Aplikacje mobilne</p>
+        </div>
+        <div class="activity">
           <img src="images/img(2).jpg" alt="tablet" height="294" width="370" />
-        </li>
+          <p class="label">Rozwiązania graficzne</p>
+        </div>
       </ul>
       <div class="team-section">
         <h2 class="main-h2">Nasz zespół</h2>
@@ -363,5 +366,12 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>x</button>
+      </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
