@@ -62,6 +62,9 @@
   justify-content: flex-start;
   margin-left: 93px;
 }
+.menu:hover .menu {
+  color: var(--maincolor-blue);
+}
 .contact-menu {
   display: flex;
   margin-top: 26px;
@@ -77,6 +80,10 @@
   line-height: 0, 875;
   letter-spacing: 0.02em;
   margin-left: 46px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-menu-selected::after {
@@ -88,6 +95,7 @@
   background-color: var(--maincolor-blue);
   margin-top: 30px;
 }
+
 
 .main-menu:hover {
   color: var(--maincolor-blue);
@@ -107,10 +115,18 @@
   font-size: 14px;
   line-height: 0, 875;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .smartphone {
   margin-right: 10px;
   fill: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover {
@@ -131,6 +147,10 @@
   margin-right: 10px;
   margin-left: 30px;
   fill: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .envelope:hover {
   fill: var(--maincolor-blue);
@@ -355,6 +375,10 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-icon:hover {
   fill: white;
@@ -380,6 +404,10 @@ body {
   fill: white;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icon:hover {
   fill: white;
@@ -409,6 +437,10 @@ ul.social-footer .social-footer-title {
   border-radius: 4px;
   padding: 16px 32px;
   fill: rgba(175, 177, 184, 1);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-client:hover {
   fill: var(--maincolor-blue);
@@ -430,6 +462,10 @@ ul.social-footer .social-footer-title {
   height: 38px;
   border-radius: 4px;
   list-style: none;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button1:hover {
   background-color: var(--maincolor-blue);
@@ -441,6 +477,8 @@ ul.social-footer .social-footer-title {
   height: 38px;
   border-radius: 4px;
   list-style: none;
+
+  
 }
 .buttons-portfolio {
   display: flex;
@@ -451,6 +489,7 @@ ul.social-footer .social-footer-title {
   padding-bottom: 50px;
   padding-top: 126px;
 }
+
 .projects-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -526,10 +565,6 @@ ul.social-footer .social-footer-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  
-  
-  
-  
 }
 .portfolio-figure:hover .box-content-portfolio {
   transform: translateY(0);
@@ -589,6 +624,10 @@ footer {
   letter-spacing: 0.03em;
   color: var(--colorcontact-footer);
   padding-bottom: 9px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-footer:hover {
   color: var(--maincolor-blue);
@@ -610,7 +649,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
   background-color: white;
@@ -627,7 +666,7 @@ footer {
   cursor: pointer;
 }
 .is-hidden {
-  opacity:0;
+  opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
