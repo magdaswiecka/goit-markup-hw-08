@@ -176,19 +176,19 @@
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </div>
-                
+
                 <div class="team-social-icon">
                   <svg class="icon-twitter" width="20px" height="20px">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </div>
-                
+
                 <div class="team-social-icon">
                   <svg class="icon-facebook" width="20px" height="20px">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </div>
-                
+
                 <div class="team-social-icon">
                   <svg class="icon-linkedin" width="20px" height="20px">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -215,19 +215,19 @@
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </div>
-                
+
                 <div class="team-social-icon">
                   <svg class="icon-twitter" width="20px" height="20px">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </div>
-                
+
                 <div class="team-social-icon">
                   <svg class="icon-facebook" width="20px" height="20px">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </div>
-                
+
                 <div class="team-social-icon">
                   <svg class="icon-linkedin" width="20px" height="20px">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -254,19 +254,19 @@
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </div>
-                
+
                 <div class="team-social-icon">
                   <svg class="icon-twitter" width="20px" height="20px">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </div>
-                
+
                 <div class="team-social-icon">
                   <svg class="icon-facebook" width="20px" height="20px">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </div>
-                
+
                 <div class="team-social-icon">
                   <svg class="icon-linkedin" width="20px" height="20px">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -325,9 +325,11 @@
               m. Warszawa, Aleje Jerozolimskie 21
             </address>
           </div>
-  
+
           <div>
-            <a class="contact-footer" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="contact-footer" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
           </div>
           <div>
             <a
@@ -364,13 +366,94 @@
             </div>
           </li>
         </ul>
+        <div>
+          <form name="newsletter">
+            <label class="newsletter">
+              <p class="text-newsletter">Zapisz się do newslettera</p>
+              <div class="newsletter-form">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  class="input-newsletter"
+                />
+                <button type="submit" class="button-newsletter">
+                  <p class="icon-send">Zapisz się &nbsp;</p>
+                </button>
+              </div>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <p class="h1-modal">Zostaw swoje dane w formularzu poniżej</p>
+        <div class="zamow-form">
+          <form name="zamow-usluge-form">
+            <label>
+              <p class="label-name">Imie</p>
+              <div class="login">
+                <input type="text" name="name" class="input-text-with-icon" />
+                <div class="input-icon">
+                  <svg class="icon-person-form" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-person-black-18dp-1"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </label>
+
+            <label>
+              <p class="label-name">Telefon</p>
+              <div class="login">
+                <input type="tel" name="name" class="input-text-with-icon" />
+                <div class="input-icon">
+                  <svg class="icon-person-form" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-phone-black-18dp-1"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </label>
+
+            <label>
+              <p class="label-name">E-mail</p>
+              <div class="login">
+                <input type="email" name="name" class="input-text-with-icon" />
+                <div class="input-icon">
+                  <svg class="icon-person-form" width="20px" height="20px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-email-black-18dp-1"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </label>
+
+            <label>
+              <p class="label-name">Komentarz</p>
+
+              <textarea
+                class="komentarz"
+                name="Komentarz"
+                rows="10"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+            <div class="checkbox-form">
+              <input class="checkbox visually-hidden" id="user-policy" type="checkbox">
+                <label for="user-policy" class="text-checkbox">    &nbsp; Oświadczam iż akceptuję <a href="index.html" class="link-policy">Regulamin</a> i <a href="index.html" class="link-policy">Politykę Prywatności</a>.
+              </label>
+            </div>
+            <div class="button-m">
+              <button type="submit" class="button-modal">Wyślij</button>
+            </div>
+          </form>
+        </div>
         <button type="button" class="close-btn" data-modal-close>x</button>
       </div>
-
     </div>
     <script src="./js/modal.js"></script>
   </body>
