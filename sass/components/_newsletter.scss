@@ -1,0 +1,59 @@
+.newsletter {
+  padding-right: 0px;
+}
+.newsletter__text {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.05em;
+}
+.newsletter__form {
+  display: flex;
+  gap: 12px;
+}
+.newsletter__input {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--backgroundcolor-dark);
+  color: white;
+
+    &:focus {
+    outline: none;
+    border-color: var(--maincolor-blue);
+  }
+}
+
+.newsletter__button {
+  width: 200px;
+  height: 50px;
+  padding-right: 0px;
+  background-color: var(--maincolor-blue);
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+
+    &:hover {
+    cursor: pointer;
+  }
+}
+
+.newsletter__iconsend {
+  display: flex;
+  justify-content: center;
+
+    &::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/iconsend.svg);
+    background-position: 50% 50%;
+  }
+  
+}

@@ -1,0 +1,21 @@
+:root {
+  --colortext-naglowki: rgba(33, 33, 33, 1);
+  --colortext-opisy: rgba(117, 117, 117, 1);
+  --backgroundcolor-dark: rgba(47, 48, 58, 1);
+  --maincolor-blue: rgba(33, 150, 243, 1);
+  --buttoncolor: rgba(33, 150, 243, 1);
+  --buttonportfolio: rgba(245, 244, 250, 1);
+  --colormainblack: rgba(0, 0, 0, 0);
+  --shadowcolor: rgba(0, 0, 0, 0.12);
+  --coloradress-footer: rgba(245, 244, 250, 1);
+  --colorcontact-footer: rgba(255, 255, 255, 0.6);
+
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: var(--maincolor-blue);
+}

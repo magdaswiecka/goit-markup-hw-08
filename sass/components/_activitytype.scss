@@ -1,0 +1,45 @@
+.activity-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0, 85;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--colortext-naglowki);
+  margin: 0px;
+  padding-bottom: 50px;
+}
+
+.activity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 94px;
+  margin-top: 0px;
+}
+.activitytype {
+  position: relative;
+  height: 294px;
+}
+.activity__label {
+  position: absolute;
+  bottom: 0px;
+  margin: 0px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  padding: 27px;
+}
+
+@media (max-width: 1199px) {
+  .activity, .activity-h2 {
+    display: none;
+  }
+}

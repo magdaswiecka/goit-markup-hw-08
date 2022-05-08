@@ -1,0 +1,244 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo--style {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+  text-decoration: none;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  
+}
+.header__logo {
+  display: flex;
+  justify-content: left;
+
+}
+.menu {
+  display: flex;
+  margin-top: 32px;
+  justify-content: flex-start;
+  margin-left: 93px;
+}
+
+.menu:hover .menu {
+  color: var(--maincolor-blue);
+}
+
+
+.contact {
+  display: flex;
+  margin-top: 26px;
+  margin-bottom: 32px;
+}
+
+.main-menu {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0, 875;
+  letter-spacing: 0.02em;
+  margin-left: 46px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--maincolor-blue);
+  }
+}
+
+.main-menu--selected::after {
+  display: block;
+  content: "";
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--maincolor-blue);
+  margin-top: 30px;
+}
+
+
+.header__logo-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+/* CONTACT BEM BLOCK */
+@media (max-width: 1199px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__mail .envelope {
+    margin-left: 0px;
+  }
+
+  nav.menu {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact, nav.menu {
+    display: none;
+  }
+}
+
+
+.contact__telephone,
+.contact__mail {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  color: var(--colortext-opisy);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0, 875;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+}
+
+.contact__telephone:hover .smartphone,
+.contact__mail:hover .envelope {
+  fill: var(--maincolor-blue);
+  cursor: pointer;
+}
+
+
+.smartphone {
+  margin-right: 10px;
+  fill: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.envelope {
+  margin-right: 10px;
+  margin-left: 30px;
+  fill: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+    fill: var(--maincolor-blue);
+    cursor: pointer;
+  }
+}
+
+
+// Mobile menu
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-menu__icon svg,
+  .opened-mobile-menu__close-icon svg {
+    display: flex;
+    fill: black;
+  
+    &:hover {
+      fill: var(--maincolor-blue);
+      cursor: pointer;
+    }
+  }
+
+  .opened-mobile-menu__close-icon svg {
+    fill: #212121;
+  }
+}
+
+.opened-mobile-menu {
+  background: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  & a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: var(--maincolor-blue)
+    }
+  }
+}
+
+.opened-mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.opened-mobile-menu__phone {
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.opened-mobile-menu__mail {
+  margin-bottom: 50px;
+}
+
+.opened-mobile-menu .opened-mobile-menu__phone,
+.opened-mobile-menu__social-links a {
+  color: var(--maincolor-blue);
+}
+
+.opened-mobile-menu__social-links a {
+  padding-right: 10px;
+  padding-left: 5px;
+}
+.opened-mobile-menu__social-links a:not(:last-child) {
+  border-right: 1px rgb(236, 236, 236) solid;
+}
+.opened-mobile-menu__social-links a:first-child {
+  padding-left: 0px;
+}
+
+.opened-mobile-menu__close-icon {
+  position: fixed;
+  top: 21px;
+  right: 23.33px;
+}

@@ -1,0 +1,167 @@
+footer {
+  display: flex;
+  background-color: var(--backgroundcolor-dark);
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.inner-footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 50px;
+}
+
+
+.footer__logo {
+  padding-bottom: 20px;
+}
+.footer__logolink {
+  /* padding-top: 60px; */
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0, 58;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+  color: var(--coloradress-footer);
+  padding-bottom: 9px;
+  font-style: normal;
+}
+.footer__contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0, 58;
+  /* or 171% */
+
+  display: inline-block;
+  letter-spacing: 0.03em;
+  color: var(--colorcontact-footer);
+  padding-bottom: 9px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover {
+    color: var(--maincolor-blue);
+    text-decoration: none;
+  }
+}
+
+.footer__contactmail {
+  padding-bottom: 51px;
+}
+.footersocial {
+  padding-left: 70px;
+}
+
+/* FOOTER SOCIAL ICONS */
+.footersocial__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 34px;
+  padding-top: 18px;
+}
+.footersocial__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+    fill: white;
+    cursor: pointer;
+    background-color: var(--maincolor-blue);
+  }
+}
+
+
+ul.footersocial {
+  list-style: none;
+  color: white;
+}
+
+ul.footersocial .footersocial__title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 1199px) {
+  footer {
+    justify-content: inherit;
+  }
+  .inner-footer {
+    gap: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+
+    & > :first-child, & > :nth-child(2) {
+      width: 50%;
+    }
+
+    & > :first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footersocial__title {
+      text-align: center;
+    }
+
+    & > :last-child {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .newsletter__text {
+        text-align: center;
+      }
+      .newsletter__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .footersocial {
+    padding-left: 0px;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .inner-footer {
+    & > :first-child, & > :nth-child(2) {
+      width: 100%;
+    }
+  }
+}
